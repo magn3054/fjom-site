@@ -1,9 +1,9 @@
 jobs:
   web-deploy:
-    name: 🎉 Deploy
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
-    - name: 🚚 Get latest code
+    - name: Get latest code
       uses: actions/checkout@v2
 
     - name: Use Node.js 14
@@ -11,7 +11,7 @@ jobs:
       with:
         node-version: '14'
       
-    - name: 🔨 Build Project
+    - name: Build Project
       run: |
         npm install
         npm run build
@@ -19,7 +19,7 @@ jobs:
     - name: List output files
       run: find build/ -print
       
-    - name: 📂 Sync files
+    - name: Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
           server: ${{ secrets.FTP_SERVER }}
