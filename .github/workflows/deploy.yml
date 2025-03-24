@@ -19,5 +19,5 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: ${{ github.workspace }}/dist/ # Path to your code in the repository
+          local-dir: /dist/ # Path to your code in the repository
           server-dir:  fjom/ # Path to the directory on my Simply.com server.
