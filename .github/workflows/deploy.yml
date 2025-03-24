@@ -12,6 +12,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        
+      - name: Build the project
+        run: npm run build
 
       - name: Deploy to Simply.com
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
