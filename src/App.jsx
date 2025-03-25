@@ -1,6 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Layout from "./Layout";
-import FirstPage from "./views/FirstPage";
 import SecondPage from "./views/SecondPage";
 import NotFound from "./views/NotFound";
 import "./App.css";
@@ -17,7 +16,7 @@ const router = createBrowserRouter([
       },
       {
         path: "first",
-        element: <FirstPage />,
+        element: <SecondPage />,
       },
       {
         path: "*",
