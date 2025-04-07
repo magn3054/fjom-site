@@ -1,0 +1,81 @@
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+    gap: 1rem;
+    transition: gap 0.3s ease-in-out;
+}
+
+.buttonWrapper:hover {
+    gap: 0.25rem;
+}
+
+.linkWrapper {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 2rem);
+    padding: 1rem 5rem;
+    border-radius: 0.75rem;
+    font-family: inherit;
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.buttonContainer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    border-radius: 0.75rem;
+    border: 1px solid transparent;
+    padding: 1rem 5rem;
+    font-size: 2rem;
+    font-family: inherit;
+    cursor: pointer;
+    width: calc(100% - 2rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:focus-visible,
+.linkWrapper:focus-visible {
+    outline: none;
+}
+
+.primary {
+    background-color: #660099;
+    color: #FFF;
+}
+
+.primary:hover {
+    background-color: #663399;
+}
+
+.secondary {
+    background-color: #fcfcfc;
+    color: #660099;
+    border: 0.25rem solid #660099;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.secondary:hover {
+    background-color: #660099;
+    color: #FFF;
+}
+
+/* Arrow Icon */
+.icon {
+    height: 4rem;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.flipped {
+    transform: rotate(180deg);
+}

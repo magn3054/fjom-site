@@ -1,22 +1,20 @@
-.main {
-    margin: 10rem 6rem;
+.cardContainer {
+    padding: 1rem 0;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 4rem;
+    gap: 12rem;
     justify-content: space-between;
 }
 
-.main > section {
+.cardContainer > * {
     display: flex;
     flex-direction: column; 
-    align-items: flex-start;
-    width: calc(50% - 4rem);
+    width: calc(50% - 12rem);
     justify-content: center;
-    gap: 1rem;
 }
 
-.main > section:nth-child(2n) {
+.cardContainer > :nth-child(2n) {
     align-items: flex-end;
     text-align: right;
     color: #1E1E1E;
@@ -34,7 +32,7 @@ p {
     padding: 0.5rem 0;
 }
 
-.lottie {
+.cardContainer > * > img {
     width: 100%;
     height: auto;
     padding: 1rem;

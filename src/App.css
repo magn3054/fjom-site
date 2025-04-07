@@ -1,19 +1,12 @@
-.text {
-  color: red;
+/* .mainpart {
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20rem;
+    justify-items: center;
+    align-items: center;
 }
 
-.navigation {
-  display: flex;
-  gap: 10px;
-  color: white;
-  background-color: darkslategray;
-  padding-left: 10px;
-}
-
-.linktext {
-  color: white;
-}
-
-.mainpart {
-  height: 80vh;
-}
+.mainpart > * > * > * {
+    border: red solid 1px;
+} */

@@ -7,7 +7,7 @@ import DefaultPage from "./views/DefaultPage";
 
 const router = createBrowserRouter([
   {
-    path: "/navigationinheader/",
+    path: "/",
     element: <Layout />,
     children: [
       {
@@ -15,7 +15,7 @@ const router = createBrowserRouter([
         element: <DefaultPage />,
       },
       {
-        path: "first",
+        path: "/second",
         element: <SecondPage />,
       },
       {

@@ -1,0 +1,76 @@
+header {
+    position: sticky;
+    /* top: 0; */
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    margin: 1rem 6rem;
+    padding-top: 1rem;
+    background: linear-gradient(102deg, white 55dvw, #1E1E1E 45dvw);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    width: auto;
+    height: 7rem;
+    justify-self: start;
+}
+
+nav {
+    justify-self: end;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+li {
+    list-style: none;
+    margin: 0.5rem 0;
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    border: transparent solid 1px;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease-in-out, color 0.5s ease-in-out;
+}
+
+a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #660099;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+li:hover a {
+    color: #660099;
+}
+
+li:hover a::after {
+    width: 100%;
+    left: 0;
+}
+
+.active a {
+    color: #660099;
+}
+
+.active a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #660099;
+}
