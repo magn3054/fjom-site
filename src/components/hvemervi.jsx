@@ -1,28 +1,33 @@
 // TeamSection.jsx
 import React from 'react';
 import './hvemervi.module.css';
+import Billede from './assets/cfo.webp'
 
 const TeamSection = () => {
   const teamMembers = [
     {
       title: 'CEO',
       name: 'Oscar',
-      email: 'oscar@fjom.dk'
+      email: 'oscar@fjom.dk',
+      image: '/assets/cfo.webp'
     },
     {
       title: 'CTO',
       name: 'Magnus',
-      email: 'magnus@fjom.dk'
+      email: 'magnus@fjom.dk',
+      image: '/assets/cfo.webp'
     },
     {
       title: 'CFO',
       name: 'Frederik',
-      email: 'frederik@fjom.dk'
+      email: 'frederik@fjom.dk',
+      image: '/assets/cfo.webp'
     },
     {
       title: 'CSO',
       name: 'Jonas',
-      email: 'jonas@fjom.dk'
+      email: 'jonas@fjom.dk',
+      image: '/assets/cfo.webp'
     }
   ];
 
@@ -32,9 +37,19 @@ const TeamSection = () => {
       <div className="team-grid">
         {teamMembers.map((member, index) => (
           <div className="team-card" key={index}>
-            <div className="avatar-placeholder">
-              <div className="avatar-head"></div>
-              <div className="avatar-body"></div>
+            <div className="team-member-image">
+              {member.image ? (
+                <img 
+                  src={member.image} 
+                  alt={`${member.name} - ${member.title}`} 
+                  className="member-img"
+                />
+              ) : (
+                <div className="image-placeholder">
+                  <div className="avatar-head"></div>
+                  <div className="avatar-body"></div>
+                </div>
+              )}
             </div>
             <div className="team-info">
               <h2 className="team-title">{member.title}</h2>

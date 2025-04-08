@@ -1,6 +1,7 @@
 import style from "./DefaultPage.module.css";
 import Button from "../components/Button";
 import Animation from "../assets/animation.webm";
+import TeamSection from '../components/hvemervi.jsx';
 
 export default function DefaultPage() {
     return (
@@ -25,6 +26,11 @@ export default function DefaultPage() {
                 <p>Ja det er et rigtig godt spørgsmål. Det første er helt simpelt fordi det forbedrer din hjemmeside funktionalitet og ydeevne hvilket forbedre brugeoplevelsen. Det bruger mindre strøm hvilket jo altid er godt!</p>
                 <Button label="Secondary Button" onClick={() => { }} variant="secondary" iconPosition="left" />
             </section>
+            <div>
+          </div>
+          <TeamSection />
         </div>
+
+        
     )
 }
