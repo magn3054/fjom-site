@@ -60,3 +60,23 @@ button:focus-visible,
 .flipped {
     transform: rotate(180deg);
 }
+
+
+/* --- Mobile Styles --- */
+@media (max-width: 768px) {
+    .buttonWrapper {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        padding: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .icon {
+        display: none;
+    }
+}

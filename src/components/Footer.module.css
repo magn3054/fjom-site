@@ -1,5 +1,4 @@
 footer {
-    /* bottom: 0; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -14,7 +13,7 @@ footer {
     background-size: cover;
 }
 
-footer > section {
+footer>section {
     flex: 1 1 45%;
     max-width: 50%;
     justify-content: center;
@@ -80,4 +79,53 @@ footer > section {
 
 .policy p {
     font-size: 0.75rem;
+}
+
+/* Mobile-friendly styles */
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        padding: 2rem 1rem;
+        background: none;
+    }
+
+    footer>section {
+        width: 100%;
+        max-width: 100%;
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .footerButton {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .SoMe {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .SoMe img {
+        margin: 0 0.5rem;
+        background-color: white;
+        border-radius: 50%;
+    }
+
+    .label {
+        right: 50%;
+        transform: translateX(50%);
+        top: -2rem;
+    }
+
+    .policy {
+        flex-direction: column;
+        gap: 0.5rem;
+        text-align: center;
+    }
+
+    .policy p {
+        font-size: 0.65rem;
+    }
 }

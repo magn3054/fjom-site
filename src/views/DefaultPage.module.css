@@ -41,6 +41,33 @@ p {
 }
 
 .dialog {
-    align-self: center; 
+    align-self: center;
     height: 100%;
+}
+
+/* Mobile-friendly styles */
+@media (max-width: 768px) {
+    .main {
+        margin: 4rem 1rem;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .main>section {
+        width: 100%;
+        align-items: flex-start !important;
+        text-align: left !important;
+    }
+
+    .main>section:has(video){
+        align-items: center !important;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
 }

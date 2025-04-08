@@ -17,13 +17,11 @@ export default function DefaultPage() {
                 </video>
             </section>
             <section>
-                {/* <lottie-player className={style.lottie} src="assets/globeload.json" background="transparent" speed="1" loop="" autoplay=""></lottie-player> */}
             </section>
             <section>
                 <h3>Hvorfor?</h3>
                 <p>Hvorfor i al verden skal du energi-optimere din hjemmeside?</p>
                 <p>Ja det er et rigtig godt spørgsmål. Det første er helt simpelt fordi det forbedrer din hjemmeside funktionalitet og ydeevne hvilket forbedre brugeoplevelsen. Det bruger mindre strøm hvilket jo altid er godt!</p>
-                <Button label="Secondary Button" link="/omos" variant="secondary" iconPosition="left" />
             </section>
         </div>
     )
