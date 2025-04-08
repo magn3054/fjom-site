@@ -15,8 +15,8 @@ export default function Header() {
                     <li className={location.pathname === "/omos" ? style.active : ""}>
                         <Link to="/omos">Om os</Link>
                     </li>
-                    <li className={location.pathname === "/third" ? style.active : ""}>
-                        <Link to="/third">Hvad gør vi</Link>
+                    <li className={location.pathname === "/whatwedo" ? style.active : ""}>
+                        <Link to="/whatwedo">Hvad gør vi</Link>
                     </li>
                     <li className={location.pathname === "/fourth" ? style.active : ""}>
                         <Link to="/fourth">Ydelser</Link>

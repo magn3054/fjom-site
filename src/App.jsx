@@ -1,6 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Layout from "./Layout";
 import OmOs from "./views/OmOs";
+import WhatWeDo from "./views/WhatWeDo";
 import NotFound from "./views/NotFound";
 import "./App.css";
 import DefaultPage from "./views/DefaultPage";
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
       {
         path: "/omos",
         element: <OmOs />,
+      },
+      {
+        path: "/whatwedo",
+        element: <WhatWeDo />,
       },
       {
         path: "*",
