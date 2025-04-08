@@ -3,19 +3,23 @@
   line-height: 1.5;
 
   color-scheme: light dark;
-  
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-html {
   background: linear-gradient(102deg, white 55dvw, #1E1E1E 45dvw);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* body {
+  background: linear-gradient(102deg, white 55dvw, #1E1E1E 45dvw);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
 
 * {
   box-sizing: border-box;
@@ -30,6 +34,7 @@ body {
   min-width: 320px;
   min-height: 100dvh;
   margin: 0;
+  background: inherit;
 }
 
 a {
@@ -39,7 +44,8 @@ a {
   transition: color 0.2s ease-in-out;
 }
 
-h3, p {
+h3,
+p {
+  color: white;
   mix-blend-mode: difference;
-  color: #ffffff;
 }

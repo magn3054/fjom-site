@@ -1,12 +1,67 @@
-# React + Vite
+# Button
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A reusable `Button` component that supports variants, optional icons, and link behavior.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🔧 Props
 
-## Expanding the ESLint configuration
+| Prop Name     | Type                                      | Default     | Description |
+|---------------|-------------------------------------------|-------------|-------------|
+| `label`       | `string`                                  | **required**| Text to display inside the button. |
+| `onClick`     | `function`                                | `undefined` | Callback triggered on button click. Ignored if `link` is provided. |
+| `className`   | `string`                                  | `""`        | Custom class(es) to override or extend styling. |
+| `variant`     | `"primary" \| "..."`                      | `"primary"` | Visual style of the button. Must match a class in `Button.module.css`. |
+| `iconPosition`| `"none" \| "left" \| "right"`             | `"none"`    | Adds a right-arrow icon to the left or right of the button. |
+| `link`        | `string \| null`                          | `null`      | If provided, renders the button as a styled `<a>` tag linking to the specified URL. |
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📦 Usage
+
+### Basic Button
+
+```jsx
+<Button label="Click Me" onClick={() => alert("Clicked!")} />
+```
+
+### Button with Right Icon
+
+```jsx
+<Button label="Next" iconPosition="right" onClick={handleNext} />
+```
+
+### Button as a Link
+
+```jsx
+<Button label="Go to Docs" link="https://example.com/docs" />
+```
+
+### Custom Style and Variant
+
+```jsx
+<Button
+  label="Submit"
+  variant="secondary"
+  className="myCustomClass"
+/>
+```
+
+---
+
+## 🎨 Styling
+
+- `Button.module.css` must define classes like:
+  - `.primary`, `.secondary`, etc. (variants)
+  - `.buttonWrapper` – Container of the button and icon
+  - `.icon` – Arrow icon styling
+  - `.flipped` – Flips the arrow icon horizontally (used for right-positioned icons)
+  - `.linkWrapper` – Additional styles when the button is rendered as a link
+
+---
+
+## 📎 Notes
+
+- When `link` is provided, the button becomes a link (`<a>` tag) and `onClick` is ignored.
+- Arrow icon is sourced from `../assets/right-arrow.svg` and conditionally shown.
+- Accessibility: All icons include `alt` text for screen readers.
