@@ -1,6 +1,6 @@
 import style from "./DefaultPage.module.css";
 import Button from "../components/Button";
-
+import Animation from "../assets/animation.webm";
 
 export default function DefaultPage() {
     return (
@@ -13,7 +13,10 @@ export default function DefaultPage() {
             </section>
             <section>
                 <Button label="Primary Button" link="/" iconPosition="left" />
-                {/* <lottie-player className={style.lottie} src="assets/globeload.json" background="transparent" speed="1" loop="" autoplay=""></lottie-player> */}
+                
+                <video width="60%" autoplay loop>
+                    <source src={Animation} type="video/webm" />
+                </video>
             </section>
             <section>
                 {/* <lottie-player className={style.lottie} src="assets/globeload.json" background="transparent" speed="1" loop="" autoplay=""></lottie-player> */}
