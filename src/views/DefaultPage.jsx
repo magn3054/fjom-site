@@ -25,7 +25,7 @@ export default function DefaultPage() {
                 <h3>Hvorfor?</h3>
                 <p>Hvorfor i al verden skal du energi-optimere din hjemmeside?</p>
                 <p>Ja det er et rigtig godt spørgsmål. Det første er helt simpelt fordi det forbedrer din hjemmeside funktionalitet og ydeevne hvilket forbedre brugeoplevelsen. Det bruger mindre strøm hvilket jo altid er godt!</p>
-                <Button label="Secondary Button" link="/" variant="secondary" iconPosition="left" />
+                <Button label="Secondary Button" variant="secondary" iconPosition="left" />
             </section>
         </div>
     )
