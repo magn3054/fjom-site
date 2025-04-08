@@ -12,9 +12,8 @@ export default function Header() {
             <Link to="/"><img className={style.logo} src={Logo} alt="" /></Link>
             <nav>
                 <ul>
-                    {/* checker om location passer med linket og tilføjer en special klasse dertil, ellers tilføjes ingen */}
-                    <li className={location.pathname === "/second" ? style.active : ""}>
-                        <Link to="/second">Om os</Link>
+                    <li className={location.pathname === "/omos" ? style.active : ""}>
+                        <Link to="/omos">Om os</Link>
                     </li>
                     <li className={location.pathname === "/third" ? style.active : ""}>
                         <Link to="/third">Hvad gør vi</Link>
