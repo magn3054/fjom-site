@@ -39,3 +39,8 @@ p {
     height: auto;
     padding: 1rem;
 }
+
+.dialog {
+    align-self: center; 
+    height: 100%;
+}

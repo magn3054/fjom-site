@@ -1,9 +1,6 @@
-// TeamSection.jsx
 import React from 'react';
-import './hvemervi.module.css';
-import Billede from './assets/cfo.webp'
 
-const TeamSection = () => {
+export default function TeamSection () {
   const teamMembers = [
     {
       title: 'CEO',
@@ -60,7 +57,5 @@ const TeamSection = () => {
         ))}
       </div>
     </div>
-  );
-};
-
-export default TeamSection;
+  )
+}

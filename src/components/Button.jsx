@@ -4,16 +4,16 @@ import style from "./Button.module.css"; // Import af CSS-modul til styling
 import arrowIcon from "../assets/right-arrow.svg"; // Import af ikon til knappen
 
 // Button-komponent med props til label, klikfunktion, klasse, variant, ikonplacering og link
-const Button = ({
+export default function Button({
     label,
     link = "#",
     className = "",
     variant = "primary",
     iconPosition = "none", // 'none' | 'left' | 'right'
-}) => {
+}) {
     // Kombinerer styling baseret på variant og ekstra klassenavne
     const buttonClass = `${style[variant]} ${className}`;
-    
+
     // funktioner der håndterer externt eller internt link
     const goToExternal = () => {
         window.location.href = link;
@@ -57,7 +57,5 @@ const Button = ({
                 />
             )}
         </div>
-    );
-};
-
-export default Button;
+    )
+}

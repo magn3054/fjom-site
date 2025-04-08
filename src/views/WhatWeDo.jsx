@@ -1,20 +1,18 @@
 import style from "./DefaultPage.module.css";
-import Button from "../components/Button";
-import Animation from "../assets/animation.webm";
+import IconSeries from "../components/IconSeries";
 
 export default function DefaultPage() {
     return (
         <div className={style.main}>
             <section>
-                <h3>Hvem er vi</h3>
-                <p>Vi er et hold skarpe gutter som er eksperter inden for den seneste estimerings teknologi til hjemmesider. Vi brænder for at skabe en bedre oplevelse for kunder og formindske det generelle energi-forbrug. </p>
-                <p>Generelt sørger vi for hele siden er optimeret og kører bedst muligt, så du som virksomhedsejer kan sove trygt uden bekymringer.</p>
+                <h3>Hvad gør vi</h3>
+                <p>Vi laver en estimering af din hjemmesides energi-forbrug og identificerer de områder som kan forbedres. Disse forbedringer formindsker hver i sær mængden af energi brugt til at køre siden. </p>
+                <p>Dette gør vi kan øge ydeevnen og dermed skabe en bedre oplevelse for dine kunder.</p>
             </section>
             <section>
-                <video width="60%" autoPlay muted loop>
-                    <source src={Animation} type="video/webm" />
-                </video>
+                <p>Vi bruger den nyeste teknolog til vurdering  af hjemmesidens energi-forbrug. Disse værktøjer sørger for vi har et troværdigt estimat som du kan stole på. Dertil afgiver vi en generel rapport som dine kunder kan læse mere om vores tiltag på.</p>
             </section>
+            <IconSeries />
         </div>
     )
 }

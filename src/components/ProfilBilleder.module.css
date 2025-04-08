@@ -1,0 +1,47 @@
+.profileBillederContainer {
+    width: 100%;
+    margin-top: 5rem;
+}
+
+.profileTitle {
+    font-size: 2rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.profileRow {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.profileCard {
+    height: 32rem;
+    width: auto;
+    text-align: flex-start;
+}
+
+.profileImage {
+    height: 100%;
+    width: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profileCard h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 6px 0 4px;
+}
+
+.profileCard h6 {
+    font-size: 1rem;
+    /* color: #666; */
+    margin: 2px 0;
+}
+
+h2, h5, h6 {
+    mix-blend-mode: difference;
+    font-weight: 100;
+}
