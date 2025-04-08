@@ -1,6 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Layout from "./Layout";
-import SecondPage from "./views/SecondPage";
+import OmOs from "./views/OmOs";
 import NotFound from "./views/NotFound";
 import "./App.css";
 import DefaultPage from "./views/DefaultPage";
@@ -15,8 +15,8 @@ const router = createBrowserRouter([
         element: <DefaultPage />,
       },
       {
-        path: "/second",
-        element: <SecondPage />,
+        path: "/omos",
+        element: <OmOs />,
       },
       {
         path: "*",

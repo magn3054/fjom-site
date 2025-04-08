@@ -12,8 +12,7 @@ export default function DefaultPage() {
                 <Button label="Primary Button" onClick={() => { }} variant="primary" iconPosition="right" />
             </section>
             <section>
-                <Button label="Primary Button" onClick={() => { }} iconPosition="left" />
-                <video width="60%" autoplay muted loop>
+                <video width="60%" autoplay loop>
                     <source src={Animation} type="video/webm" />
                 </video>
             </section>
