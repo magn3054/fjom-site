@@ -57,3 +57,33 @@ textarea::placeholder {
 .formContainer button:hover {
     color: #660099;
 }
+
+
+@media (max-width: 768px) {
+    .formContainer {
+        margin: 5rem 1rem;
+    }
+
+    .form {
+        width: 90%;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.75rem;
+    }
+
+    input,
+    textarea {
+        font-size: 0.95rem;
+    }
+
+    .formContainer button {
+        font-size: 0.95rem;
+    }
+}

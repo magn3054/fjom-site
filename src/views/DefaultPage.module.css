@@ -34,10 +34,8 @@ p {
     padding: 0.5rem 0;
 }
 
-.lottie {
-    width: 100%;
-    height: auto;
-    padding: 1rem;
+.main>section:has(img[alt="hænder"]) {
+    align-items: center;
 }
 
 .dialog {
@@ -61,6 +59,11 @@ p {
 
     .main>section:has(video){
         align-items: center !important;
+    }
+
+    .main>section:has(img[alt="hænder"]) {
+        align-items: center !important;
+        order: 3;
     }
 
     h3 {
