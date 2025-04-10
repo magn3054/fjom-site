@@ -24,7 +24,7 @@
 input,
 textarea {
     padding: 0.75rem;
-    background-color: #1f3344;
+    background-color: #660099;
     width: 100%;
     border: none;
     color: white;
@@ -43,7 +43,7 @@ textarea::placeholder {
 
 .formContainer button {
     padding: 0.75rem;
-    background-color: #233648;
+    background-color: #660099;
     border: none;
     border-radius: 0;
     width: 100%;
@@ -52,10 +52,13 @@ textarea::placeholder {
     font-size: 1rem;
     text-transform: uppercase;
     cursor: pointer;
+    transition: color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 }
 
 .formContainer button:hover {
-    color: #660099;
+    border-radius: 0.25rem;
+    color: black;
+    transition: color 0.3s ease-in-out, border-radius 0.3s ease-in-out;
 }
 
 

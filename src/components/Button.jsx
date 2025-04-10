@@ -8,7 +8,7 @@ export default function Button({
     label,
     link = "#",
     className = "",
-    variant = "primary",
+    variant = "primary", // 'primary' | 'secondary'
     iconPosition = "none", // 'none' | 'left' | 'right'
 }) {
     // Kombinerer styling baseret på variant og ekstra klassenavne
@@ -19,13 +19,13 @@ export default function Button({
         window.location.href = link;
     };
 
-    // Funktion til intern navigation (SPA-routing)
+    // Funktion til intern navigation
     const navigate = useNavigate();
     const goToInternal = () => {
         navigate(link);
     };
 
-    // Knappens indhold – vælger onclick-funktion baseret på om linket er internt eller eksternt
+    // Knappens indhold  // vælger onclick-funktion baseret på om linket er internt eller eksternt
     const buttonContent = (
         <button
             type="button"
