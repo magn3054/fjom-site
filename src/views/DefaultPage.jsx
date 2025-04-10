@@ -1,7 +1,7 @@
 import style from "./DefaultPage.module.css";
 import Button from "../components/Button";
 import Animation from "../assets/animation.webm";
-import handShake from "../assets/handshake.svg";
+import social from "../assets/socialicon.svg";
 
 export default function DefaultPage() {
     return (
@@ -18,7 +18,7 @@ export default function DefaultPage() {
                 </video>
             </section>
             <section>
-                <img src={handShake} alt="hænder" />
+                <img src={social} alt="tre personer" />
             </section>
             <section>
                 <h3>Hvorfor?</h3>

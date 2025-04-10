@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import style from "./Kontakt.module.css";
 import Toast from '../components/Toast'; 
+import bulb from "../assets/elicon.svg";
 
 export default function KontaktForm() {
     const [showToast, setShowToast] = useState(false);
@@ -13,7 +14,7 @@ export default function KontaktForm() {
 
     return (
         <div className={style.formContainer}>
-            <h2 className={style.title}>Send os en henvendelse</h2>
+            <h2 className={style.title}>Send os en henvendelse <img src={bulb} alt="El-pære" /></h2>
             <form className={style.form} onSubmit={handleSubmit}>
                 <input type="email" placeholder="Din email" />
                 <input type="text" placeholder="tlf nr:" />
