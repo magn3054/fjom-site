@@ -9,7 +9,7 @@ export default function Header() {
 
     return (
         <header>
-            <Link to="/"><img className={style.logo} src={Logo} alt="" /></Link>
+            <Link to="/"><img className={style.logo} src={Logo} alt="Logo" /></Link>
             <nav>
                 <ul>
                     {/* checker om location passer med linket og tilføjer en special klasse dertil, ellers tilføjes ingen */} {/* statement ? true : false */}

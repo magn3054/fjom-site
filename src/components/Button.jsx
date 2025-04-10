@@ -36,14 +36,14 @@ export default function Button({
         </button>
     );
 
-    // Returnerer wrapper med eventuelt ikon og knapindhold
+    // Returnerer wrpper med eventuelt ikon og knapindhold
     return (
         <div className={style.buttonWrapper}>
-            {/* Viser ikon til venstre for teksten hvis valgt */}
+            {/* Viser ikon til venstre for teksten hvis vgt */}
             {iconPosition === "left" && (
                 <img
                     src={arrowIcon}
-                    alt="arrow"
+                    alt="knappe-pil"
                     className={style.icon}
                 />
             )}
@@ -54,7 +54,7 @@ export default function Button({
             {iconPosition === "right" && (
                 <img
                     src={arrowIcon}
-                    alt="arrow"
+                    alt="kanppe-pil"
                     className={`${style.icon} ${style.flipped}`}
                 />
             )}
