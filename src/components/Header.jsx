@@ -5,14 +5,14 @@ import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
 export default function Header() {
-    useEffect(() => {}, [useLocation().pathname]); // rerenderer headeren ved location ændring
+    useEffect(() => {}, [useLocation().pathname]); // Sørger for at komponenten gen-renderes ved ændring i URL-sti
 
     return (
         <header>
             <Link to="/"><img className={style.logo} src={Logo} alt="" /></Link>
             <nav>
                 <ul>
-                    {/* checker om location passer med linket og tilføjer en special klasse dertil, ellers tilføjes ingen */}
+                    {/* checker om location passer med linket og tilføjer en special klasse dertil, ellers tilføjes ingen */} {/* statement ? true : false */}
                     <li className={location.pathname === "/omos" ? style.active : ""}>
                         <Link to="/omos">Om os</Link>
                     </li>

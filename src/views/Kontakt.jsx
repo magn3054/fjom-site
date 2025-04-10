@@ -25,7 +25,8 @@ export default function KontaktForm() {
                 <button type="submit">SEND HENVENDELSE</button>
             </form>
 
-            {showToast && <Toast message="Din henvendelse er sendt!" onClose={() => setShowToast(false)} />}
+            {/* renderer når setShowToast er true */}
+            {showToast && <Toast message="Din henvendelse er sendt!" onClose={() => setShowToast(false)} />} 
         </div>
     )
 }

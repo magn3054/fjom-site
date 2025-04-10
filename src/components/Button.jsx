@@ -1,9 +1,9 @@
 import React from "react";
 import { Link, useNavigate } from 'react-router-dom';
-import style from "./Button.module.css"; // Import af CSS-modul til styling
-import arrowIcon from "../assets/right-arrow.svg"; // Import af ikon til knappen
+import style from "./Button.module.css";
+import arrowIcon from "../assets/right-arrow.svg"; 
 
-// Button-komponent med props til label, klikfunktion, klasse, variant, ikonplacering og link
+// Button-komponent med props til label, link, klasse, variant, ikonplacering og navigation
 export default function Button({
     label,
     link = "#",
@@ -14,16 +14,18 @@ export default function Button({
     // Kombinerer styling baseret på variant og ekstra klassenavne
     const buttonClass = `${style[variant]} ${className}`;
 
-    // funktioner der håndterer externt eller internt link
+    // Funktion til ekstern navigation
     const goToExternal = () => {
         window.location.href = link;
     };
+
+    // Funktion til intern navigation (SPA-routing)
     const navigate = useNavigate();
     const goToInternal = () => {
         navigate(link);
     };
 
-    // Knappens indhold hvor onclick funktion bestemmes af linket givet
+    // Knappens indhold – vælger onclick-funktion baseret på om linket er internt eller eksternt
     const buttonContent = (
         <button
             type="button"
@@ -34,7 +36,7 @@ export default function Button({
         </button>
     );
 
-    // det her er hvad vi får når <Button /> bliver kaldt i de andre filer
+    // Returnerer wrapper med eventuelt ikon og knapindhold
     return (
         <div className={style.buttonWrapper}>
             {/* Viser ikon til venstre for teksten hvis valgt */}

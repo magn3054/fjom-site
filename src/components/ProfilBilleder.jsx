@@ -5,6 +5,7 @@ import CTO from '../assets/cto.webp';
 import CEO from '../assets/ceo.webp';
 import CSO from '../assets/cso.webp';
 
+// Array med data for hver person – billede, navn og titel
 const images = [
     {
         src: CEO,
@@ -34,6 +35,7 @@ export default function ProfilBilleder() {
             <h2 className={style.profileTitle}>Her er vi</h2>
             <div className={style.profileRow}>
                 {images.map((img, index) => {
+                    // Genererer e-mail baseret på navn (med lowercase)
                     const email = `${img.title.toLowerCase()}@fjom.dk`;
                     return (
                         <div key={index} className={style.profileCard}>

@@ -12,14 +12,9 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-}
 
-/* body {
-  background: linear-gradient(102deg, white 55dvw, #1E1E1E 45dvw);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
+  
+}
 
 * {
   box-sizing: border-box;
