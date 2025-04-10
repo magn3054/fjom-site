@@ -46,7 +46,6 @@
         grid-template-rows: auto;
         width: 90%;
         gap: 1rem;
-        border: red 1px solid;
     }
 
     .gridContainer>* {
@@ -55,16 +54,10 @@
         grid-row: auto !important;
         justify-items: center;
         width: 100%;
-        border: blue 1px solid;
     }
 
     .arrow {
         transform: rotate(90deg) !important;
         width: 20%;
-        border: green 1px solid;
-    }
-
-    .icon img {
-        border: yellow 1px solid;
     }
 }
