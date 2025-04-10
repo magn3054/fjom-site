@@ -20,7 +20,7 @@ export default function Header() {
                         <Link to="/whatwedo">Hvad vi gør</Link>
                     </li>
                     <li className={location.pathname === "/kontakt" ? style.active : ""}>
-                        <Link to="/kontakt">Kontakt</Link>
+                        <Link to="/kontakt">Henvendelse</Link>
                     </li>
                 </ul>
             </nav>
